@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Hojas de estilo</title>
+        <style type="text/css">
+            p{ color: chartreuse; background-color: black; }
+            ol li{ text-decoration: line-through; }
+            ol li:nth-child(odd){ background-color: darkviolet; }
+            ol li:nth-child(even){ background-color: powderblue; }
+            li:hover{ font-size: xx-large; background-color: pink; color: crimson; }
+            .clase_ol { color: cyan; }
+            .clase_ol:nth-child(odd) { background-color: darkgoldenrod; }
+            .clase_ol:nth-child(even) { background-color: yellow; }
+            #confuente { color: blue; font-family: "Nova Square", sans-serif; font-weight: 400; font-style: normal; }
+            .nova-square-regular { font-family: "Nova Square", sans-serif; font-weight: 400; font-style: normal; }
+            h1{ text-align: center; text-transform: uppercase; text-shadow: 1px 1px 5px navy; }
+        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <h2>Estilo en linea</h2>
+        <ul style="color: darkturquoise">
+            <li>CPU</li>
+            <li>GPU</li>
+            <li>RAM</li>
+            <li>HDD</li>
+            <li>SDD</li>
+            <li>MB</li>
+        </ul>
+        <h2>Estilo incrustado con style en head</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget pellentesque risus. Donec dui diam, vulputate eget purus sit amet, hendrerit aliquet purus. Nunc viverra felis at ante facilisis consectetur. Donec viverra cursus dictum. Suspendisse potenti. Praesent est lectus, scelerisque viverra porttitor sed, fermentum a nunc. Phasellus mollis dolor a magna volutpat, at rhoncus mi auctor. Nunc laoreet, nulla a ornare volutpat, arcu mi vehicula ante, nec eleifend erat lorem id massa. Integer vel finibus nibh.</p>
+        <p>Aenean ornare a tellus interdum sagittis. Curabitur purus augue, ullamcorper id tellus eu, tincidunt scelerisque justo. Nam felis arcu, laoreet id feugiat eget, egestas in augue. Mauris vel ante a nunc pellentesque condimentum. Integer volutpat rutrum sollicitudin. Donec vitae porttitor sem. Praesent in turpis sit amet massa porttitor ultricies. Suspendisse ac magna dictum, viverra urna nec, aliquam turpis. Nam vitae nulla vestibulum, blandit enim sed, consectetur magna. In in odio tincidunt, pellentesque est ut, hendrerit augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi ultricies euismod tellus, in malesuada quam sodales ut. Curabitur aliquam fermentum libero sit amet facilisis.</p>
+        <p>In pulvinar massa est, a euismod risus dignissim id. Cras porttitor sapien erat, quis maximus lacus mattis quis. Vestibulum eleifend egestas tristique. Nunc pulvinar porttitor enim in gravida. Morbi sodales faucibus nisl ac sollicitudin. In elementum elit et leo finibus rhoncus. Aliquam semper vehicula risus, ut tincidunt neque tempor eu. Vivamus nibh nulla, mattis ac nulla id, hendrerit mattis metus. Fusce in pellentesque erat. Cras feugiat vestibulum convallis. Proin et urna eget lorem eleifend porta.</p>
+        <ol>
+            <li>CPU</li>
+            <li>GPU</li>
+            <li>RAM</li>
+            <li>HDD</li>
+            <li>SDD</li>
+            <li>MB</li>
+        </ol>
+        <p id="confuente">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget pellentesque risus. Donec dui diam, vulputate eget purus sit amet, hendrerit aliquet purus. Nunc viverra felis at ante facilisis consectetur. Donec viverra cursus dictum. Suspendisse potenti. Praesent est lectus, scelerisque viverra porttitor sed, fermentum a nunc. Phasellus mollis dolor a magna volutpat, at rhoncus mi auctor. Nunc laoreet, nulla a ornare volutpat, arcu mi vehicula ante, nec eleifend erat lorem id massa. Integer vel finibus nibh.</p>
+        <ol class="clase_ol nova-square-regular">
+            <li>Asus</li>
+            <li>Dell</li>
+            <li>Lenovo</li>
+            <li>Razer</li>
+            <li>HP</li>
+            <li>Alienware</li>
+            <li>MSI</li>
+            <li>IBM</li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+table{
+    border: outset 5px black;
+    width: 100%;
+}
+tr:nth-child(even){
+    background-color: lightgray;
+}
+td,th{
+    padding: 5px;
+}
+td{
+    text-align: center;
+    border: inset 3px grey;
+}
+th{
+    text-align: center;
+    border: inset 3px grey;
+    color: white;
+    background-color: black;
+    text-transform: uppercase;
+}
+.nova-square-regular {
+  font-family: "Nova Square", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.nova-square-titulo {
+  font-family: "Nova Square", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
