@@ -2,7 +2,6 @@
  * Globals
  */
 
-
 /* Custom default button */
 .btn-light,
 .btn-light:hover,
@@ -10,7 +9,6 @@
   color: #333;
   text-shadow: none; /* Prevent inheritance from `body` */
 }
-
 
 /*
  * Base structure
@@ -24,7 +22,6 @@ body {
 .cover-container {
   max-width: 42em;
 }
-
 
 /*
  * Header
@@ -49,6 +46,10 @@ body {
   border-bottom-color: #fff;
 }
 
+/*
+ * Personal style
+*/
+
 @font-face{
   font-family: cyberpunkh;
   src: url(fonts/Cyberpunk/Cyberpunk.ttf);
@@ -59,4 +60,19 @@ body {
   font-weight: 400;
   font-style: normal;
   color: white;
+}
+
+.rationale-regular {
+  font-family: "Rationale", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
+
+.tektur-head {
+  font-family: "Tektur", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "width" 100;
 }
