@@ -27,22 +27,11 @@
         background-size: 99%;
         background-position: top center;
       }
-      main {
-        background-color: rgba(0, 0, 0, 0.70);
-        border-radius: 50px;
-        box-shadow: 10px 10px 10px white;
-      }
-      i {
+      a i {
         background-color: rgba(0, 0, 0, 0.60);
         border-radius: 10px;
         box-shadow: 5px 5px 5px white;
         padding: 8px;
-      }
-      i:hover {
-        background-color: rgba(0, 0, 0, 0.60);
-        border-radius: 15px;
-        box-shadow: 6px 6px 6px white;
-        padding: 15px;
       }
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -218,29 +207,93 @@
       <header class="mb-auto">
         <div>
           <h3 class="float-md-start mb-0">
-            <a href="#" style="text-decoration: none; color: white;">
+            <a href="index.html" style="text-decoration: none; color: white;">
               <span class="cyberpunk" style="font-size: 35px;">Cyberpunk&nbsp;</span>
               <span class="tektur-head" style="font-size: 12px;">2077</span>
             </a>
           </h3>
-          <nav class="nav nav-masthead justify-content-center float-md-end">
-            <a class="nav-link fw-bold py-1 px-0 tektur-head" href="contenido.html">Contenido</a>
-            <a class="nav-link fw-bold py-1 px-0 tektur-head" href="referencias.html">Referencias</a>
-            <a class="nav-link fw-bold py-1 px-0 tektur-head" href="contacto.html">Contacto</a>
+          <nav class="nav nav-masthead justify-content-center float-md-end tektur-head">
+            <a class="nav-link fw-bold py-1 px-0" href="contenido.html">Contenido</a>
+            <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Referencias</a>
+            <a class="nav-link fw-bold py-1 px-0" href="contacto.html">Contacto</a>
           </nav>
         </div>
       </header>
-      <main class="px-3">
-        <h1 class="tektur-head">
-            <span class="cyberpunk" style="font-size: 50px;">Cyberpunk&nbsp;</span>
-            <span class="tektur-head" style="font-size: 14px;">2077</span>
-        </h1>
-        <p class="lead rationale-regular">
-          Imagina una ciudad futurista que nunca duerme, donde las luces de neón iluminan cada rincón y la tecnología se mezcla con la vida cotidiana de formas tan fascinantes como peligrosas. Te sumerges en Night City, un ciudad abierta y caótica llena de acción, mercenarios y decisiones que marcarán el rumbo de tu historia
-        </p>
-        <p class="lead rationale-regular">
-          <a href="contenido.html" class="btn btn-lg btn-dark fw-bold border-black bg-black">Entrar</a>
-        </p>
+      <main class="px-3 rationale-regular" style="font-size: larger">
+        <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header tektur-head">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <i class="fa fa-book fa-2x" aria-hidden="true">&nbsp;</i>BOOTSTRAP
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body" style="text-align: justify">
+              <strong>Bootstrap v.5.3</strong> Quickly get a project started with any of our examples ranging from using parts of the framework to custom components and layouts. <code>https://getbootstrap.com/docs/5.3/examples/</code>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header tektur-head">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <i class="fa fa-font-awesome fa-2x" aria-hidden="true">&nbsp;</i>FONT AWESOME
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body" style="text-align: justify">
+              <strong>Font awesome v.4.7.0</strong> You asked, Font Awesome delivers with 41 shiny new icons in version 4.7. Want to request new icons? Here's how. Need vectors or want to use on the desktop? Check the cheatsheet. <code>https://fontawesome.com/v4/icons/#brand</code>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header tektur-head">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <i class="fa fa-google fa-2x" aria-hidden="true">&nbsp;</i>GOOGLE FONTS
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body" style="text-align: justify">
+              <strong>Google Fonts</strong> Making the web more beautiful, fast, and open through great typography. <code>https://fonts.google.com/</code>
+            </div>
+          </div>
+        </div>
+          <div class="accordion-item">
+          <h2 class="accordion-header tektur-head">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              <i class="fa fa-rocket fa-2x" aria-hidden="true">&nbsp;</i>PHOENIX CODE
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body" style="text-align: justify">
+              <strong>Phoenix Code v.5.0.5</strong> Phoenix Code is a text editor designed to make coding as intuitive and fun as playing a video game - specially crafted for web developers, designers, and students. <code>https://phcode.io/</code>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header tektur-head">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              <i class="fa fa-github fa-2x" aria-hidden="true">&nbsp;</i>GIT HUB
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body" style="text-align: justify">
+              <strong>Git Hub</strong> Designed to help you master the basics of GitHub, whether you're new to coding or looking to enhance your version control skills. <code>https://github.com/</code>
+            </div>
+          </div>
+        </div>
+          <div class="accordion-item">
+          <h2 class="accordion-header tektur-head">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              <i class="fa fa-file-code-o fa-2x" aria-hidden="true">&nbsp;</i>VISUAL STUDIO CODE
+            </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body" style="text-align: justify">
+              <strong>Visual Studio Code</strong> Your codebase is indexed locally and remotely to understand what's relevant, enabling fast, context-aware interactions. <code>https://code.visualstudio.com/</code>
+            </div>
+          </div>
+        </div>
+      </div>
       </main>
       <footer class="mt-auto text-white-50">
         <p>

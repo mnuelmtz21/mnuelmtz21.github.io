@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Astro v5.13.2" />
+    <title>Cyberpunk 2077</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/"/>
+    <script src="assets/js/color-modes.js"></script>
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <meta name="theme-color" content="#712cf9"/>
+    <link href="carousel.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: #0000001a;
+        border: solid rgba(0, 0, 0, 0.15);
+        border-width: 1px 0;
+        box-shadow:
+          inset 0 0.5em 1.5em #0000001a,
+          inset 0 0.125em 0.5em #00000026;
+      }
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+      .bi {
+        vertical-align: -0.125em;
+        fill: currentColor;
+      }
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+      .bd-mode-toggle .bi {
+        width: 1em;
+        height: 1em;
+      }
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+    </style>
+  </head>
+  <body>
+    <header data-bs-theme="dark">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Cyberpunk 2077</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active div-background" style="background-image: url(contenido/mantisblades.jpg);">
+            <div class="container">
+              <div class="carousel-caption text-start div-text">
+                <h1>Cyberpunk 2077 (Videojuego)</h1>
+                <p class="opacity-75">
+                  Cyberpunk 2077 es un videojuego de rol de acción de disparos en primera persona desarrollado por CD Projekt RED. La historia sigue la lucha de V, un/una mercenario/a de Night City que lidia con las consecuencias de un atraco que salió mal y que resulta en un biochip experimental cibernético que contiene un engrama de la legendaria estrella de rock y terrorista Johnny Silverhand, que amenaza con sobrescribir lentamente la mente de V. A medida que avanza la historia, V y Silverhand deben trabajar juntos para encontrar una manera de separarse y salvar la vida de V.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item div-background" style="background-image: url(contenido/phli.jpg);">
+            <div class="container">
+              <div class="carousel-caption div-text">
+                <h1>Phantom Liberty (DLC)</h1>
+                <p>
+                  Phantom Liberty es una expansión del videojuego. La expansión presenta un nuevo distrito en el mundo abierto del juego, así como una línea nueva de misiones. Despues de los acontecimientos ocurridos en Cyberpunk 2077, V es contactado por Songbird, una netrunner experta ofreciendole una posibilidad de vivir a cambio de que realice trabajos, en este caso involucrandose con la presidenta de los Nuevos Estados Unidos de America y un ex agente de la FIA llamado Solomon Reed.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item div-background" style="background-image: url(contenido/edgerun.jpg);">
+            <div class="container">
+              <div class="carousel-caption text-end div-text">
+                <h1>Cyberpunk Edgerunners (Serie)</h1>
+                <p>
+                  Cyberpunk: Edgerunners es un anime distribuido por Netflix, basado en el videojuego Cyberpunk 2077, el cual es una precuela y está ambientado un año antes de los sucesos del videojuego. En una distopía invadida por la corrupción, el crimen y los implantes cibernéticos, un joven impulsivo pero talentoso llamado David Martinez, después de perder todo lo que tiene en un tiroteo desde un vehículo, toma la decisión de sobrevivir en el lado equivocado de la ley como un «edgerunner»: un mercenario del mercado negro de alta tecnología también conocido como «cyberpunk» para así poder finalmente ganarse la vida por medio de encargos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Marketing messaging and featurettes
+  ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+      <div class="container marketing">
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="contenido/armas.png" alt="armasc" width="140px">
+            <h2 class="fw-normal">Armas</h2>
+            <p>
+              Las armas son comunes y variadas en toda Night City, desde armas de fuego hasta armas inteligentes. Dividiendose en multiples categorias para acabar con todo a tu paso.
+            </p>
+            <p>
+              <a class="btn btn-secondary" href="#">Ver detalles &raquo;</a>
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img src="contenido/cyberware.png" alt="cyberwarec" width="140px">
+            <h2 class="fw-normal">Cyberware</h2>
+            <p>
+              El cyberware es la implementacion asegurada en los mercenarios para realizar sus trabajos. Desde modificaciones corporales, hasta dispositivos para ralentizar el tiempo.
+            </p>
+            <p>
+              <a class="btn btn-secondary" href="#">Ver detalles &raquo;</a>
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img src="contenido/vehiculo.png" alt="cyberwarec" width="140px">
+            <h2 class="fw-normal">Vehiculos</h2>
+            <p>
+              Los vehiculos estan sumamente avanzados, equipados con armas, misiles, autoconduccion y cambios de pintura y patrones en tiempo real.
+            </p>
+            <p>
+              <a class="btn btn-secondary" href="#">Ver detalles &raquo;</a>
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+        </div>
+        <!-- /.row -->
+        <!-- START THE FEATURETTES -->
+        <hr class="featurette-divider" />
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">
+              <i class="fa fa-gamepad" aria-hidden="true"></i> Sitio Web Oficial
+              <span class="text-body-secondary">(juegos, anime y mas)</span>
+            </h2>
+            <p class="lead">
+              Adéntrate en el mundo de Cyberpunk 2077, un RPG de mundo abierto ambientado en un futuro siniestro de CD PROJEKT RED.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <iframe title="PaginaOficial" src="https://www.cyberpunk.net/mx/es/" width="100%" height="500px"></iframe>
+          </div>
+        </div>
+        <hr class="featurette-divider" />
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading fw-normal lh-1">
+              <i class="fa fa-instagram" aria-hidden="true"></i> Instagram Oficial
+              <span class="text-body-secondary">CD PROJEKT RED</span>
+            </h2>
+            <p class="lead">
+              Post oficiales de la empresa creadora del videojuego
+            </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <iframe title="InstagramPost" src="" width="100%" height="500px"></iframe>
+          </div>
+        </div>
+        <hr class="featurette-divider" />
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">
+              <i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook
+              <span class="text-body-secondary">Texto</span>
+            </h2>
+            <p class="lead">
+              Texto
+            </p>
+          </div>
+          <div class="col-md-5">
+            <iframe title="FacebokPost" src="" width="100%" height="500px"></iframe>
+          </div>
+        </div>
+        <hr class="featurette-divider" />
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading fw-normal lh-1">
+              <i class="fa fa-twitter" aria-hidden="true"></i> X Oficial
+              <span class="text-body-secondary">Post informativo</span>
+            </h2>
+            <p class="lead">
+              La edicion Ultimate ya disponible en multiples plataformas
+            </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Cyberpunk 2077: Ultimate Edition is out now on Xbox Series X|S, PlayStation 5, and PC! 🥳<br><br>Grab your digital or physical copy and experience every story Night City has to offer. ✨<a href="https://t.co/ypDLYjozJZ">https://t.co/ypDLYjozJZ</a> <a href="https://t.co/IshfSsEnSy">pic.twitter.com/IshfSsEnSy</a></p>&mdash; Cyberpunk 2077 (@CyberpunkGame) <a href="https://twitter.com/CyberpunkGame/status/1732022281528844722?ref_src=twsrc%5Etfw">December 5, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+        </div>
+        <hr class="featurette-divider" />
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">
+              <i class="fa fa-music" aria-hidden="true"></i> Tik tok Oficial
+              <span class="text-body-secondary">Gameplay</span>
+            </h2>
+            <p class="lead">
+              Publicacion de un gameplay por la empresa creadora del videojuego
+            </p>
+          </div>
+          <div class="col-md-5">
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@cdprojektred/video/7595172595775851798" data-video-id="7595172595775851798" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@cdprojektred" href="https://www.tiktok.com/@cdprojektred?refer=embed">@cdprojektred</a> Get into the action, choom. How are you gonna jump in? <a title="cyberpunk" target="_blank" href="https://www.tiktok.com/tag/cyberpunk?refer=embed">#cyberpunk</a> <a title="cyberpunk2077" target="_blank" href="https://www.tiktok.com/tag/cyberpunk2077?refer=embed">#cyberpunk2077</a> <a title="gaming" target="_blank" href="https://www.tiktok.com/tag/gaming?refer=embed">#gaming</a> <a title="gamingclips" target="_blank" href="https://www.tiktok.com/tag/gamingclips?refer=embed">#gamingclips</a> <a target="_blank" title="♬ original sound - CD PROJEKT RED" href="https://www.tiktok.com/music/original-sound-7595172611588492054?refer=embed">♬ original sound - CD PROJEKT RED</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+          </div>
+        </div>
+        <hr class="featurette-divider" />
+        <!-- /END THE FEATURETTES -->
+      </div>
+      <!-- /.container -->
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-end">
+          <a href="#" style="text-decoration: none; color: white;">Volver al inicio</a>
+        </p>
+      </footer>
+    </main>
+    <script
+      src="assets/dist/js/bootstrap.bundle.min.js"
+      class="astro-vvvwv3sm"
+    ></script>
+  </body>
+</html>
